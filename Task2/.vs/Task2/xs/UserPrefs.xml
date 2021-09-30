@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{5F286D3E-F907-4AD4-987F-657A155C65F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Task2/Product.cs">
+    <Files>
+      <File FileName="Task2/Program.cs" Line="27" Column="37" />
+      <File FileName="Task2/Product.cs" Line="54" Column="59" />
+      <File FileName="Task2/Meat.cs" Line="42" Column="94" />
+      <File FileName="Task2/DairyProducts.cs" Line="32" Column="98" />
+      <File FileName="Task2/Storage.cs" Line="65" Column="48" />
+      <File FileName="Task2/Check.cs" Line="13" Column="10" />
+      <File FileName="Task2/Buy.cs" Line="48" Column="57" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Task2" expanded="True">
+            <Node name="Task2" expanded="True">
+              <Node name="Product.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Task2 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -1,0 +1,12 @@
+/Users/artemhuk/Projects/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.deps.json
+/Users/artemhuk/Projects/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.runtimeconfig.json
+/Users/artemhuk/Projects/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.runtimeconfig.dev.json
+/Users/artemhuk/Projects/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.dll
+/Users/artemhuk/Projects/Task2/Task2/bin/Debug/netcoreapp3.1/Task2.pdb
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.csproj.AssemblyReference.cache
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.AssemblyInfoInputs.cache
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.AssemblyInfo.cs
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.dll
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.pdb
+/Users/artemhuk/Projects/Task2/Task2/obj/Debug/netcoreapp3.1/Task2.genruntimeconfig.cache
