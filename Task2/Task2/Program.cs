@@ -6,8 +6,14 @@ namespace Task2
     {
         static void Main(string[] args)
         {
+            
+            
+        
             try
             {
+                Storage s = new Storage();
+                s.InitFromFile(@"/Users/artemhuk/Desktop/data.txt");
+                s.FindSpoiledDairyProducts(@"/Users/artemhuk/Desktop/spoiled.txt");
                 int size;
                 Console.WriteLine("Enter size of storage");
                 if (!int.TryParse(Console.ReadLine(), out size))

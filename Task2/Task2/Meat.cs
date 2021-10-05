@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 namespace Task2
 {
     public class Meat:Product
@@ -46,19 +47,25 @@ namespace Task2
             
             
         }
-        public Meat(string name,double price,double weight,Category category,Type type):base(name,price,weight)
+        public Meat(string name,double price,double weight,DateTime date,int expirationInDays,Category category,Type type):base(name,price,weight,date,expirationInDays)
         {
             MeatCategory = category;
             MeatType = type;
 
         }
-        public Meat():this(null,0,0,0,0)
+        public Meat(string name, double price, double weight,  Category category, Type type) : base(name, price, weight)
+        {
+            MeatCategory = category;
+            MeatType = type;
+
+        }
+        public Meat():this(" ",0,0,DateTime.Today,0,0,0)
         {
 
         }
         public override string ToString()
         {
-            return base.ToString()+",Category: "+MeatCategory+",Type: "+MeatType;
+            return base.ToString()+",Category: "+MeatCategory+",Type: "+MeatType+"\n";
         }
         public override bool Equals(object obj)
         {
@@ -72,6 +79,25 @@ namespace Task2
                 }
             }
             return res;
+        }
+        public override void Parse(string s)
+        {
+            try
+            {
+                string[] sArray = s.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string[] sArray2 = new string[5];
+
+                Array.Copy(sArray, sArray2, 5);
+                base.Parse(string.Join(" ",sArray2));
+                MeatCategory=(Category)Enum.Parse(typeof(Category), sArray[5]);
+                MeatType = (Type)Enum.Parse(typeof(Type), sArray[6]);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            
+            
         }
     }
 }

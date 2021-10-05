@@ -3,37 +3,27 @@ namespace Task2
 {
     public class DairyProducts: Product
     {
-        protected int expirationDate;
-        public int ExpirationDate
-        {
-            private set
-            {
-                if (value>=0)
-                {
-                    expirationDate = value;
-                }
-            }
-            get
-            {
-                return expirationDate;
-            }
-        }
+        
         protected const double dairyProductPriceChangePercentage = 0.005;
-        public DairyProducts(string name,double price,double weight,int expirationDate):base(name,price,weight)
+        public DairyProducts(string name,double price,double weight,DateTime date,int expirationDays):base(name,price,weight,date,expirationDays)
         {
-            this.ExpirationDate = expirationDate;
+            
         }
-        public DairyProducts():this(null,0,0,0)
+        public DairyProducts(string name, double price, double weight, int expirationDays) : base(name, price, weight)
+        {
+            this.expirationInDays = expirationDays;
+        }
+        public DairyProducts():this(" ",0,0,DateTime.Today,0)
         {
 
         }
         public override void ChangePrice(double percentage)
         {
-            price = price + price * dairyProductPriceChangePercentage * ExpirationDate*percentage;
+            price = price + price * dairyProductPriceChangePercentage * expirationInDays*percentage;
         }
         public override string ToString()
         {
-            return base.ToString()+",Expiration date: "+ExpirationDate;
+            return base.ToString()+",Expiration date: "+expirationInDays;
         }
         public override bool Equals(object obj)
         {
@@ -41,12 +31,18 @@ namespace Task2
             DairyProducts temp = obj as DairyProducts;
             if (temp != null)
             {
-                if (temp.Name == this.Name && temp.Price == this.Price && temp.Weight == this.Weight && temp.ExpirationDate==this.expirationDate )
+                if (temp.Name == this.Name && temp.Price == this.Price && temp.Weight == this.Weight && temp.expirationInDays==this.expirationInDays )
                 {
                     res = true;
                 }
             }
             return res;
         }
+        public override void Parse(string s)
+        {
+            base.Parse(s);
+        }
+
+
     }
 }

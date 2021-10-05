@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.IO;
+using System.Text;
 namespace Task2
 {
     public class Storage
@@ -9,57 +11,94 @@ namespace Task2
         {
             get
             {
-                if (products!=null && index<products.Length)
+                if (products != null && index < products.Length)
                 {
                     return products[index];
                 }
-                
+
                 return null;
             }
             set
             {
-                if (products != null && index<products.Length)
+                if (products != null && index < products.Length)
                 {
                     products[index] = value;
                 }
-                
+
             }
         }
-        public Storage(int size=0)
+        public Storage(int size = 0)
         {
-            if (size>=0)
+            if (size >= 0)
             {
                 products = new Product[size];
             }
         }
-        
-        
-        public void AutoInit()
+
+
+        public void InitFromFile(string path)
         {
-            products = new Product[3];
-            string[] name = { "Cola", "Pork","Cheese"};
-            double[] price = { 12, 56, 43 };
-            double[] weight = { 1, 2, 0.5 };
-            if (products!=null)
+            try
             {
-                products[0] = new Product(name[0],price[0],weight[0]);
-                products[1] = new Meat(name[1], price[1], weight[1], Meat.Category.I, Meat.Type.Pork);
-                products[2] = new DairyProducts(name[2],price[2],weight[2],30);
+                StreamReader reader = new StreamReader(path);
+                string number = reader.ReadLine();
+                int iNumber = int.Parse(number);
+                products = new Product[iNumber];
+                string data;
+
+                for (int i = 0; i < iNumber; i++)
+                {
+                    data = reader.ReadLine();
+                    string[] aData = data.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                    string[] tArray;
+                    switch (aData[0])
+                    {
+                        case "p":
+                            products[i] = new Product();
+                            tArray=new string[aData.Length-1];
+                            Array.Copy(aData, 1, tArray, 0, tArray.Length);
+                            products[i].Parse(string.Join(" ", tArray));
+                            break;
+                        case "m":
+                            products[i] = new Meat();
+                            tArray = new string[aData.Length - 1];
+                            Array.Copy(aData, 1, tArray, 0, tArray.Length);
+                            products[i].Parse(string.Join(" ", tArray));
+                            break;
+                        case "d":
+                            products[i] = new DairyProducts();
+                            tArray = new string[aData.Length - 1];
+                            Array.Copy(aData, 1, tArray, 0, tArray.Length);
+                            products[i].Parse(string.Join(" ", tArray));
+                            break;
+                        default:
+                            throw new FormatException("Line has to contain specifier p/m/d at the beginning");
+                            break;
+                    }
+                }
+                reader.Close();
+
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            
+
 
 
         }
         public override string ToString()
         {
             string temp = "";
-            if (products!=null)
+            if (products != null)
             {
                 foreach (var item in products)
                 {
                     temp = temp + item.ToString() + "\n";
                 }
             }
-            
+
             return temp;
         }
         private (string, double, double) ProductRead()
@@ -79,7 +118,7 @@ namespace Task2
         }
         private (string, double, double, Meat.Category, Meat.Type) MeatRead()
         {
-            var item=ProductRead();
+            var item = ProductRead();
             Console.WriteLine("Enter meat category (Enter p(premium)/I/II):");
             string category = Console.ReadLine();
             Meat.Category ctgr;
@@ -99,13 +138,13 @@ namespace Task2
                     throw new FormatException("Wrong Input");
             }
             Meat.Type tp;
-            
+
             Console.WriteLine("Enter meat type (Enter m(mutton)/v(veal)/p(pork)/c(chicken)):");
             string type = Console.ReadLine();
             switch (type)
             {
                 case "m":
-                tp = Meat.Type.Mutton;
+                    tp = Meat.Type.Mutton;
                     break;
                 case "v":
                     tp = Meat.Type.Veal;
@@ -118,19 +157,19 @@ namespace Task2
                     break;
                 default:
                     throw new FormatException("Wrong input");
-                    
+
             }
-            return (item.Item1,item.Item2,item.Item3, ctgr, tp);
+            return (item.Item1, item.Item2, item.Item3, ctgr, tp);
         }
         private (string, double, double, int) DairyProductsRead()
         {
             var item = ProductRead();
-            
+
             Console.WriteLine("Enter expiration date (date>0)");
-            string sdate=Console.ReadLine();
+            string sdate = Console.ReadLine();
             int date;
             int.TryParse(sdate, out date);
-            return (item.Item1,item.Item2,item.Item3, date);
+            return (item.Item1, item.Item2, item.Item3, date);
         }
         public void InitStorage()
         {
@@ -141,8 +180,8 @@ namespace Task2
                 switch (type)
                 {
                     case "p":
-                        var item= ProductRead();
-                        products[i] = new Product(item.Item1,item.Item2,item.Item3);
+                        var item = ProductRead();
+                        products[i] = new Product(item.Item1, item.Item2, item.Item3);
                         break;
                     case "m":
                         var item2 = MeatRead();
@@ -154,15 +193,15 @@ namespace Task2
                         break;
                     default:
                         throw new FormatException("Wrong input");
-                      
+
                 }
             }
-            
+
         }
         public Product[] FindAllMeat()
         {
             return products.Where(x => x is Meat).ToArray();
-            
+
         }
         public void ChangeAllPrice(double percentage)
         {
@@ -171,7 +210,20 @@ namespace Task2
                 item.ChangePrice(percentage);
             }
         }
-        
+        public void FindSpoiledDairyProducts(string pathToSave)
+        {
+            StreamWriter writer = new StreamWriter(pathToSave);
+            Product[] dairy = products.Where(x => x is DairyProducts).ToArray();
+            Product[] spoiled = dairy.Where(x => x.ExpirationInDays < (int)((DateTime.Today - x.Date).TotalDays)).ToArray();
+            StringBuilder text = new StringBuilder();
+            foreach (Product item in spoiled)
+            {
+                text.Append(item);
+            }
+            writer.Write(text);
+            writer.Close();
+        }
+
 
 
 
