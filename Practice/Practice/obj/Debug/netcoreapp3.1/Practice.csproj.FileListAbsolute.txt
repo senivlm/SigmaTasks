@@ -1,0 +1,12 @@
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/bin/Debug/netcoreapp3.1/Practice.deps.json
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/bin/Debug/netcoreapp3.1/Practice.runtimeconfig.json
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/bin/Debug/netcoreapp3.1/Practice.runtimeconfig.dev.json
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/bin/Debug/netcoreapp3.1/Practice.dll
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/bin/Debug/netcoreapp3.1/Practice.pdb
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.AssemblyInfoInputs.cache
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.AssemblyInfo.cs
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.dll
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.pdb
+/Users/artemhuk/Desktop/Sigma/Practice/Practice/obj/Debug/netcoreapp3.1/Practice.genruntimeconfig.cache
