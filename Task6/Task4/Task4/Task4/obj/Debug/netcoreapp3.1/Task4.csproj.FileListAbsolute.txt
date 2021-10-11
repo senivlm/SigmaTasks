@@ -1,0 +1,13 @@
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/bin/Debug/netcoreapp3.1/Task4.deps.json
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/bin/Debug/netcoreapp3.1/Task4.runtimeconfig.json
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/bin/Debug/netcoreapp3.1/Task4.runtimeconfig.dev.json
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/bin/Debug/netcoreapp3.1/Task4.dll
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/bin/Debug/netcoreapp3.1/Task4.pdb
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.csproj.AssemblyReference.cache
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.AssemblyInfoInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.AssemblyInfo.cs
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.dll
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.pdb
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.genruntimeconfig.cache
+/Users/artemhuk/Desktop/Sigma/Task4/Task4/Task4/obj/Debug/netcoreapp3.1/Task4.GeneratedMSBuildEditorConfig.editorconfig

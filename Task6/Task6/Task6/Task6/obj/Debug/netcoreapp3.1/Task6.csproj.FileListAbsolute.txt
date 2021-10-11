@@ -1,0 +1,13 @@
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/bin/Debug/netcoreapp3.1/Task6.deps.json
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/bin/Debug/netcoreapp3.1/Task6.runtimeconfig.json
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/bin/Debug/netcoreapp3.1/Task6.runtimeconfig.dev.json
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/bin/Debug/netcoreapp3.1/Task6.dll
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/bin/Debug/netcoreapp3.1/Task6.pdb
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.csproj.AssemblyReference.cache
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.AssemblyInfoInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.AssemblyInfo.cs
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.dll
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.pdb
+/Users/artemhuk/Desktop/Sigma/Task6/Task6/Task6/obj/Debug/netcoreapp3.1/Task6.genruntimeconfig.cache
