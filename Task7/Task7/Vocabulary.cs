@@ -8,7 +8,7 @@ namespace Task7
     {
         //Fields
         private Dictionary<string, string> words;
-        private IWordReader reader;
+        private IWordReader reader; Чому в поле заносим?
 
 
 
@@ -20,6 +20,7 @@ namespace Task7
             else
                 throw new NullReferenceException();
             words = new Dictionary<string, string>();
+            Ця конструкція не дуже надихає!
             try
             {
                 if(path!="")
@@ -64,6 +65,7 @@ namespace Task7
                 {
                     writer.WriteLine(word.Key + " " + word.Value);
                 }
+                А закривати потік де будемо?
             }
             catch (Exception ex)
             {
