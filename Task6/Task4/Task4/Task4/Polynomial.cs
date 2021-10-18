@@ -110,7 +110,7 @@ namespace Task4
         }
 
         public Polynomial Add(Polynomial p)
-        {
+        {неефективно завжди ставити лишню перевірку
             Polynomial newP = new Polynomial();
             foreach (KeyValuePair<int, double> item in p.coeffs)
             {
@@ -132,7 +132,7 @@ namespace Task4
         }
 
         public Polynomial Subtract(Polynomial p)
-        {
+        {Краще було замінити відніманням і унарним мінусом. По часу гірше. Але немає повтору коду.
             Polynomial newP = new Polynomial();
             foreach (KeyValuePair<int, double> item in p.coeffs)
             {
