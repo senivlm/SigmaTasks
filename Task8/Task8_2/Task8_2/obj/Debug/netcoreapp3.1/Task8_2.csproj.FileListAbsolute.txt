@@ -1,0 +1,13 @@
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/bin/Debug/netcoreapp3.1/Task8_2.deps.json
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/bin/Debug/netcoreapp3.1/Task8_2.runtimeconfig.json
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/bin/Debug/netcoreapp3.1/Task8_2.runtimeconfig.dev.json
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/bin/Debug/netcoreapp3.1/Task8_2.dll
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/bin/Debug/netcoreapp3.1/Task8_2.pdb
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.AssemblyInfoInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.AssemblyInfo.cs
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.dll
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.pdb
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.genruntimeconfig.cache
+/Users/artemhuk/Desktop/Sigma/Task8_2/Task8_2/obj/Debug/netcoreapp3.1/Task8_2.csproj.AssemblyReference.cache
