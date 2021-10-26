@@ -1,0 +1,13 @@
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/bin/Debug/netcoreapp3.1/Task9.deps.json
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/bin/Debug/netcoreapp3.1/Task9.runtimeconfig.json
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/bin/Debug/netcoreapp3.1/Task9.runtimeconfig.dev.json
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/bin/Debug/netcoreapp3.1/Task9.dll
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/bin/Debug/netcoreapp3.1/Task9.pdb
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.csproj.AssemblyReference.cache
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.AssemblyInfoInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.AssemblyInfo.cs
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.csproj.CoreCompileInputs.cache
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.dll
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.pdb
+/Users/artemhuk/Desktop/Sigma/Task9/Task9/obj/Debug/netcoreapp3.1/Task9.genruntimeconfig.cache
