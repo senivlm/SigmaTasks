@@ -6,6 +6,7 @@ namespace Task9
     {
         static void Main(string[] args)
         {
+            // Чому не перехоплюєте вийнятки
             Storage storage = new Storage();
             Check.DeleteSpoiledEvent += StorageEventMethodHandler.DeleteSpoiledProducts;
 
