@@ -35,6 +35,7 @@ namespace Task9
                     case "m":
                         temp = EnterProduct();
                         Console.WriteLine("\nEnter meat category");
+                        // Чому так. Що дає використання object
                         object categor;
                         while (!Enum.TryParse(typeof(Meat.Category), Console.ReadLine(), out categor))
                         {
